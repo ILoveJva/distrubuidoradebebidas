@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compre Bebidas</title>
+</head>
+<body bgcolor="#aaa">
+    <header>
+        <h1>Enche Geladeiras</h1>
+    </header>
+    <main>
+        <h2>Bebidas</h2>
+        <div class="box">
+            <h3>Coca-Cola</h3>
+            <img src="imagens/cocacola200ml.jfif" id="cocacola" alt="Coca Cola" width="200px" height="200px">
+            <label for="tamanhocc">Escolha o tamanho:</label>
+            <select onclick="escolhertamanho()" id="tamanhocc" name="tamanho">
+                <option value="200">200ml</option>
+                <option value="250">250ml</option>
+                <option value="290">290ml</option>
+                <option value="310">310ml</option>
+                <option value="350">350ml</option>
+                <option value="600">600ml</option>
+                <option value="1000">1L</option>
+                <option value="1500">1.5L</option>
+                <option value="2000">2L</option>
+                <option value="2500">2.5L</option>
+            </select>
+            <input type="radio" name="tipocc" id="ccnormal" checked onclick="escolhertamanho()">
+            <label for="ccnormal">Coca Cola</label>
+            <input type="radio" name="tipocc" id="cczero" onclick="escolhertamanho()">
+            <label for="cczero">Coca Zero</label>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
